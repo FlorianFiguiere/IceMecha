@@ -6,7 +6,8 @@
 - part: 
   chapters :
     - file : Experiment/Build_granular_ice
+    - file : Experiment/Creep_Experiment
     - file : Experiment/Area_Calculator 
     - file : Experiment/Demonstration_Area_Calcul
-    - file : Experiment/Creep_Experiment
+    
     
