@@ -6,4 +6,4 @@ channels:
 dependencies:
   - python
   - jupyter-book
-  - cmath
+#  - cmath
