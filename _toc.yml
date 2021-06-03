@@ -1,13 +1,13 @@
 # Table of content
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
-- file: intro
+- file: Intro
 
 - part: 
   chapters :
-    - file : Experiment/Build_granular_ice
-    - file : Experiment/Creep_Experiment
-    - file : Experiment/Area_Calculator 
-    - file : Experiment/Demonstration_Area_Calcul
+    - file : Docs/Build_granular_ice
+    - file : Docs/Creep_Experiment
+    - file : Docs/Area_Calculator 
+
     
     
