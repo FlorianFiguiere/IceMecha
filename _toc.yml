@@ -1,13 +1,13 @@
 # Table of content
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
-- file: Intro
+format: jb-book
+root: Intro
+chapters:
+- file: Docs/Build_Columnar_Ice
+- file: Docs/Build_Granular_Ice
+- file: Docs/Machining_Sample
+- file: Docs/Thin_Ice_Film_Making
+- file: Docs/Thin_Ice_Film_AITA
+- file: Docs/Creep_Experiment
 
-- part: 
-  chapters :
-    - file : Docs/Build_granular_ice
-    - file : Docs/Creep_Experiment
-    - file : Docs/Area_Calculator 
-
-    
-    
