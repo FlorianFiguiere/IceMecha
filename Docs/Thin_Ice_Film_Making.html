@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction &#8212; Protocols and experiment linked to ice mechanics at IGE</title>
+    <title>Making of a thin film of granular ice &#8212; Protocols and experiment linked to ice mechanics at IGE</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Machining of the sample and creep experiment" href="Creep_Experiment.html" />
-    <link rel="prev" title="Protocol and experiment linked to ice mechanics" href="../Intro.html" />
+    <link rel="next" title="AITA" href="Thin_Ice_Film_AITA.html" />
+    <link rel="prev" title="Machining of the sample" href="Machining_Sample.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -85,24 +85,39 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../Intro.html">
-   Protocol and experiment linked to ice mechanics
+   Index
   </a>
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Build_Columnar_Ice.html">
+   Building Columnar Ice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Build_Granular_Ice.html">
+   Building Granular Ice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Machining_Sample.html">
+   Machining of the sample
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Introduction
+   Making of a thin film of granular ice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Thin_Ice_Film_AITA.html">
+   AITA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Creep_Experiment.html">
-   Machining of the sample and creep experiment
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Area_Calculator.html">
-   Area sample
+   Creep experiment
   </a>
  </li>
 </ul>
@@ -146,7 +161,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Docs/Build_granular_ice.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Docs/Thin_Ice_Film_Making.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -166,10 +181,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/FlorianFiguiere/IceMecha/issues/new?title=Issue%20on%20page%20%2FDocs/Build_granular_ice.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/FlorianFiguiere/IceMecha/issues/new?title=Issue%20on%20page%20%2FDocs/Thin_Ice_Film_Making.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/FlorianFiguiere/IceMecha/edit/main/docs/Docs/Build_granular_ice.ipynb"><button
+        <a class="edit-button" href="https://github.com/FlorianFiguiere/IceMecha/edit/main/docs/Docs/Thin_Ice_Film_Making.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -189,7 +204,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/FlorianFiguiere/IceMecha/main?urlpath=lab/tree/docs/Docs/Build_granular_ice.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/FlorianFiguiere/IceMecha/main?urlpath=lab/tree/docs/Docs/Thin_Ice_Film_Making.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -212,23 +227,13 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cold-environment-important-rules-and-informations-to-know-and-follow">
-   Cold environment : important rules and informations to know and follow
+  <a class="reference internal nav-link" href="#extraction-of-a-piece-from-the-sample">
+   Extraction of a piece from the sample
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#preparation-of-the-water">
-   Preparation of the water
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#preparation-of-the-snow">
-   Preparation of the snow
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#creation-of-the-granular-ice">
-   Creation of the granular ice
+  <a class="reference internal nav-link" href="#reducing-the-thickness-of-the-film">
+   Reducing the thickness of the film
   </a>
  </li>
 </ul>
@@ -242,59 +247,20 @@
         
               <div>
                 
-  <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>In order to do the experiments, we have to prepare good samples which fit the wanted characteristic (granular ice). No need to make some sampling on natural ice (in moutain or elsewhere) because we can create this ice from chemist water (clean water). Be aware that a few days are required getting the wanted ice so proceed with patience and precision in order to avoid loosing time.</p>
-<div class="section" id="cold-environment-important-rules-and-informations-to-know-and-follow">
-<h2>Cold environment : important rules and informations to know and follow<a class="headerlink" href="#cold-environment-important-rules-and-informations-to-know-and-follow" title="Permalink to this headline">¶</a></h2>
-<p>This part can be boring and look like useless but cold environment are very different than classic laboratory room. For your safety and the quality of the experiment, please take note of the following points.</p>
+  <div class="section" id="making-of-a-thin-film-of-granular-ice">
+<h1>Making of a thin film of granular ice<a class="headerlink" href="#making-of-a-thin-film-of-granular-ice" title="Permalink to this headline">¶</a></h1>
+<p>The making of a thin film before the creep experiment will allow us to spot recrystallization area and compare grains orientation before and after the experiment.</p>
+<div class="section" id="extraction-of-a-piece-from-the-sample">
+<h2>Extraction of a piece from the sample<a class="headerlink" href="#extraction-of-a-piece-from-the-sample" title="Permalink to this headline">¶</a></h2>
+<p>Concerning thin film of ice, they must be sealed if not used. Due to their geometry, sublimation is far from negligible. On top of that, the sample must be transported in a container thermally insulated. Also be cautious when machining or manipulating the thin film. His thickness make the thin film very brittle.</p>
 <ul class="simple">
-<li><p>Before starting any session in cold chamber, clothes must be adapted to the session’s lenght and other people must be aware of your session. Head and foot are the most important part to keep warm so boots, hat (one or two) and a fleece suit (or similar) is strongly recommended. Of courses, gloves are mendatory for your own safety.</p></li>
-<li><p>Due to the low temperature encountered in chamber (from 0°C to -15°C), it is recommended to take breakes when you feel the need to warm yourself up. Precipitation can make you loose days of work so be patient.</p></li>
-<li><p>Every tools and consommables used in experiments or preparations must be cooled at the chamber temperature before using them. Otherwise, this could melt the snow/ice sample.</p></li>
-<li><p>Wearing a mask is recommended because human breathe can melt/damage the snow/ice sample.</p></li>
-<li><p>Before storing any sample, they must be sealed. Otherwise sublimation of ice can damaged the sample. This applied for long term storage as for short one (like a night).</p></li>
-<li><p>Use isolated container to move sample from a chamber to another. This applied specially to thin film which can be heavly damaged by room temperature.</p></li>
-<li><p>In the following, when we talk about room temperature, we mean 20-25 °C. Do not confuse room and chamber temperature (which varied depending on the step).</p></li>
+<li><p>Prepare a few glass panel (normal and thick one). Wash them with alcohol and dry them then move them in a chamber at -15°C. Move aswell 2-3 pipette and some clean water on a bowl.</p></li>
+<li><p>Using a band scie machine, cut a part from the sample with the following dimension : same lenght (around 9mm) and a thickness around 10mm. Those value are more of a guideline than anything else : we will reduce his thickness up to 3,5 mm.</p></li>
+<li><p>Fix the (not yet) thin film on the thickest glass panel. Use a pipette and the clean water to create one drop of clean water at each side of the film. Wait after making one drop of water to avoid building stress. Drops of clean water will act as glue.</p></li>
 </ul>
 </div>
-<div class="section" id="preparation-of-the-water">
-<h2>Preparation of the water<a class="headerlink" href="#preparation-of-the-water" title="Permalink to this headline">¶</a></h2>
-<p>At room temperature.</p>
-<ul class="simple">
-<li><p>Fill up a balloon with chemist water (clean water).</p></li>
-<li><p>Boil it during 45 minutes approximately.</p></li>
-<li><p>Cap the bottle.</p></li>
-<li><p>Let it cool down at room temperature than put it at 0°C in a chamber (at least one night so the water is at the chamber temperature).</p></li>
-</ul>
-</div>
-<div class="section" id="preparation-of-the-snow">
-<h2>Preparation of the snow<a class="headerlink" href="#preparation-of-the-snow" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Fill up a box at two third with clean water.</p></li>
-<li><p>Let it freeze in a chamber at low temperature (for example -15°C) until there is no water left in the box.</p></li>
-<li><p>Move the box at room temperature, reverse it above a sink and wait for the ice block to fall. Once it drops, move it back in the chamber.</p></li>
-<li><p>Cut small pieces of ice and crush them into snow. Use a 2 mm sieve to keep only grain bellow 2mm radius.</p></li>
-<li><p>Fill up a crystallizer up to 4/5. (Slam gently the column with the “carpet” in order to pack the snow and reduce as possible the air)</p></li>
-<li><p>Fold a tissue and put it inside de crystallizer above the snow. Make sure the tissue blocks most of the snow.</p></li>
-</ul>
-</div>
-<div class="section" id="creation-of-the-granular-ice">
-<h2>Creation of the granular ice<a class="headerlink" href="#creation-of-the-granular-ice" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Move the crystallizer to a chamber at 0°C, put some silicone grease between the crystallizer and his cover. The grease should be applied in a continuous line. Put the cover at the top of the crystallizer.</p></li>
-<li><p>Connect it to the ballon which contain the water prepared above and a vacuum pump. If possible, connect the balloon at the center of the cover: the distribution of water will be more homogeneous.</p></li>
-<li><p>Start the pump and let it work during approximately 1 h in order to make the void.</p></li>
-<li><p>Pinch off the tube and stop the pump.</p></li>
-<li><p>Reverse the balloon of water and wait for the water to drop in the crystallizer. (The tissue will allow a more homogeneous distribution of water inside the crystallizer).</p></li>
-<li><p>A line should appeared at the bottom of the crystallizer. When it reach near the edge of the snow at the top, reverse again the balloon.</p></li>
-<li><p>Allow some air to go in the crystallizer by releasing for a brief instant the pinch. This will pack the snow again, moving the air trapped inside the snow outside.</p></li>
-<li><p>Use a peltier device at -15°C to create a growth from bottom to top. Put some thermal insulator around the crystallizer. (Control the peltier device’s temperature with a thermometer)</p></li>
-<li><p>When there is no water left in the crystallizer, unmould it like the ice. This should take around 45min-50min. Watch out for any unwanted shock which can brittle the sample. Also don’t wait too much : The sample must stay the less possible at room temperature.</p></li>
-<li><p>Seal it and store it at -5°C for recrystallisation. The seal will stop the sample to be damaged by the sublimation of ice.</p></li>
-<li><p>Don’t forget to put outside of the chamber any part that could work no more with ice formed inside such as the tube between the balloon and the crystallizer.</p></li>
-</ul>
-<p>Now, we have a sample of granular ice. But we need to machine it : Reduce the radius, the heigh and correct the parallelism of each base of the sample. We will cut a bit of the sample in order to create a thin film but also a surface on the sample which will receive the mouchti required for Digital Image Correlation (DIC).</p>
+<div class="section" id="reducing-the-thickness-of-the-film">
+<h2>Reducing the thickness of the film<a class="headerlink" href="#reducing-the-thickness-of-the-film" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -323,8 +289,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../Intro.html" title="previous page">Protocol and experiment linked to ice mechanics</a>
-    <a class='right-next' id="next-link" href="Creep_Experiment.html" title="next page">Machining of the sample and creep experiment</a>
+    <a class='left-prev' id="prev-link" href="Machining_Sample.html" title="previous page">Machining of the sample</a>
+    <a class='right-next' id="next-link" href="Thin_Ice_Film_AITA.html" title="next page">AITA</a>
 
         </div>
         
@@ -336,7 +302,7 @@
         
           By Florian Figuiere<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; Copyright 2021.<br/>
       </p>
     </div>
   </footer>

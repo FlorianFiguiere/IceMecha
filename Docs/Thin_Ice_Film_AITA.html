@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; Protocols and experiment linked to ice mechanics at IGE</title>
+    <title>AITA &#8212; Protocols and experiment linked to ice mechanics at IGE</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,6 +51,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Creep experiment" href="Creep_Experiment.html" />
+    <link rel="prev" title="Making of a thin film of granular ice" href="Thin_Ice_Film_Making.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -83,24 +85,39 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../Intro.html">
-   Protocol and experiment linked to ice mechanics
+   Index
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="Build_granular_ice.html">
-   Introduction
+  <a class="reference internal" href="Build_Columnar_Ice.html">
+   Building Columnar Ice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Build_Granular_Ice.html">
+   Building Granular Ice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Machining_Sample.html">
+   Machining of the sample
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Thin_Ice_Film_Making.html">
+   Making of a thin film of granular ice
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   AITA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Creep_Experiment.html">
-   Machining of the sample and creep experiment
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Area_Calculator.html">
-   Area sample
+   Creep experiment
   </a>
  </li>
 </ul>
@@ -144,7 +161,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Docs/Various_Functions_notebook.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Docs/Thin_Ice_Film_AITA.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -164,10 +181,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/FlorianFiguiere/IceMecha/issues/new?title=Issue%20on%20page%20%2FDocs/Various_Functions_notebook.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/FlorianFiguiere/IceMecha/issues/new?title=Issue%20on%20page%20%2FDocs/Thin_Ice_Film_AITA.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/FlorianFiguiere/IceMecha/edit/main/docs/Docs/Various_Functions_notebook.ipynb"><button
+        <a class="edit-button" href="https://github.com/FlorianFiguiere/IceMecha/edit/main/docs/Docs/Thin_Ice_Film_AITA.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -187,7 +204,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/FlorianFiguiere/IceMecha/main?urlpath=lab/tree/docs/Docs/Various_Functions_notebook.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/FlorianFiguiere/IceMecha/main?urlpath=lab/tree/docs/Docs/Thin_Ice_Film_AITA.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -204,14 +221,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -220,52 +229,8 @@
         
               <div>
                 
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calcArea</span><span class="p">(</span><span class="n">Dlarge</span><span class="p">,</span><span class="n">Dsmall</span><span class="o">=</span><span class="n">Dlarge</span><span class="p">,</span><span class="n">stress</span><span class="o">=</span><span class="mf">0.8</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    This function compute the surface and the mass to applied on the sample for the experiment</span>
-<span class="sd">    :param Dlarge: largeur (unit millimeter)</span>
-<span class="sd">    :type Dlarge: float</span>
-<span class="sd">    &#39;&#39;&#39;</span>
-
-    <span class="n">r</span><span class="o">=</span><span class="n">Dlarge</span><span class="o">/</span><span class="mi">2</span> <span class="c1">#larger radius of the circle.</span>
-    <span class="n">h</span><span class="o">=</span><span class="n">Dsmall</span><span class="o">-</span><span class="n">r</span> <span class="c1">#smaller radius of the sample.</span>
-    <span class="n">f</span><span class="o">=</span><span class="n">Dlarge</span><span class="o">-</span><span class="n">Dsmall</span> <span class="c1">#deflection</span>
-    <span class="n">alpha</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">cmath</span><span class="o">.</span><span class="n">acos</span><span class="p">(</span><span class="n">h</span><span class="o">/</span><span class="n">r</span><span class="p">)</span><span class="o">.</span><span class="n">real</span>
-    <span class="n">g</span><span class="o">=</span><span class="mf">9.80665</span> <span class="c1">#m.s^-2</span>
-
-    <span class="c1">#print(alpha*360/(2*cmath.pi))</span>
-    <span class="c1">#Determination of the area of the bot/top surface of the sample. (in mm²)</span>
-    <span class="n">Ac</span><span class="o">=</span><span class="n">cmath</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="nb">pow</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#Area of a circle</span>
-    <span class="n">As</span><span class="o">=</span><span class="n">Ac</span><span class="o">*</span><span class="n">alpha</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">cmath</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="c1">#Area of the circular sector alpha</span>
-    <span class="n">At</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="nb">pow</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">cmath</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">alpha</span><span class="p">)</span><span class="o">.</span><span class="n">real</span> <span class="c1">#Area of the isosceles triangle in the circle</span>
-    <span class="n">A1</span><span class="o">=</span><span class="n">As</span><span class="o">-</span><span class="n">At</span> <span class="c1">#Area of the segment circle</span>
-
-    <span class="n">Af</span><span class="o">=</span><span class="n">Ac</span><span class="o">-</span><span class="n">A1</span><span class="c1">#Final area wanted</span>
-
-    <span class="n">Mth</span><span class="o">=</span><span class="p">(</span><span class="n">stress</span><span class="o">*</span><span class="n">Af</span><span class="o">-</span><span class="mf">22.38</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mf">0.14</span><span class="p">)</span>
-    <span class="n">M2</span><span class="o">=</span><span class="p">(</span><span class="n">stress</span><span class="o">*</span><span class="n">Af</span><span class="o">-</span><span class="mf">19.42</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mf">0.14</span><span class="p">)</span>
-
-    <span class="c1">#print(&quot;Ac=&quot;,Ac, &quot;As=&quot;,As,&quot;At=&quot;,At,&quot;A1=&quot;,A1)</span>
-    <span class="k">return</span> <span class="n">Af</span><span class="p">,</span><span class="n">Mth</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">998</span><span class="n">b8e4bcc5d</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">def</span> <span class="nf">calcArea</span><span class="p">(</span><span class="n">Dlarge</span><span class="p">,</span><span class="n">Dsmall</span><span class="o">=</span><span class="n">Dlarge</span><span class="p">,</span><span class="n">stress</span><span class="o">=</span><span class="mf">0.8</span><span class="p">):</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="s1">&#39;&#39;&#39;</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span><span class="s1">     This function compute the surface and the mass to applied on the sample for the experiment</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s1">     :param Dlarge: largeur (unit millimeter)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s1">     :type Dlarge: float</span>
-
-<span class="ne">NameError</span>: name &#39;Dlarge&#39; is not defined
-</pre></div>
-</div>
-</div>
+  <div class="section" id="aita">
+<h1>AITA<a class="headerlink" href="#aita" title="Permalink to this headline">¶</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -293,6 +258,8 @@
         
         <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="Thin_Ice_Film_Making.html" title="previous page">Making of a thin film of granular ice</a>
+    <a class='right-next' id="next-link" href="Creep_Experiment.html" title="next page">Creep experiment</a>
 
         </div>
         
@@ -304,7 +271,7 @@
         
           By Florian Figuiere<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; Copyright 2021.<br/>
       </p>
     </div>
   </footer>

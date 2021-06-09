@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Area sample &#8212; Protocols and experiment linked to ice mechanics at IGE</title>
+    <title>Building Granular Ice &#8212; Protocols and experiment linked to ice mechanics at IGE</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,10 +49,10 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Machining of the sample" href="Machining_Sample.html" />
+    <link rel="prev" title="Building Columnar Ice" href="Build_Columnar_Ice.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -89,14 +89,14 @@
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Build_Columnar_Ice.html">
    Building Columnar Ice
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Build_Granular_Ice.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Building Granular Ice
   </a>
  </li>
@@ -161,7 +161,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Docs/Area_Calculator.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Docs/Build_Granular_Ice.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -181,10 +181,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/FlorianFiguiere/IceMecha/issues/new?title=Issue%20on%20page%20%2FDocs/Area_Calculator.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/FlorianFiguiere/IceMecha/issues/new?title=Issue%20on%20page%20%2FDocs/Build_Granular_Ice.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/FlorianFiguiere/IceMecha/edit/main/docs/Docs/Area_Calculator.ipynb"><button
+        <a class="edit-button" href="https://github.com/FlorianFiguiere/IceMecha/edit/main/docs/Docs/Build_Granular_Ice.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -204,7 +204,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/FlorianFiguiere/IceMecha/main?urlpath=lab/tree/docs/Docs/Area_Calculator.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/FlorianFiguiere/IceMecha/main?urlpath=lab/tree/docs/Docs/Build_Granular_Ice.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -221,6 +221,39 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cold-environment-important-rules-and-informations-to-know-and-follow">
+   Cold environment : important rules and informations to know and follow
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preparation-of-the-water">
+   Preparation of the water
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preparation-of-the-snow">
+   Preparation of the snow
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creation-of-the-granular-ice">
+   Creation of the granular ice
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -229,77 +262,63 @@
         
               <div>
                 
-  <div class="section" id="area-sample">
-<h1>Area sample<a class="headerlink" href="#area-sample" title="Permalink to this headline">¶</a></h1>
-<p>We cut off a piece of the sample so we need to calculate the area left for our sample in order to calculate the theoretical weight needed to do a creep test with <span class="math notranslate nohighlight">\(\sigma\)</span> = 0,8 MPa.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">Various_Functions</span> <span class="kn">import</span><span class="o">*</span>
-</pre></div>
+  <div class="section" id="building-granular-ice">
+<h1>Building Granular Ice<a class="headerlink" href="#building-granular-ice" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>In order to do the experiments, we have to prepare good samples which fit the wanted characteristic (granular ice). No need to make some sampling on natural ice (in moutain or elsewhere) because we can create this ice from chemist water (clean water). Be aware that a few days are required getting the wanted ice so proceed with patience and precision in order to avoid loosing time.</p>
 </div>
+<div class="section" id="cold-environment-important-rules-and-informations-to-know-and-follow">
+<h2>Cold environment : important rules and informations to know and follow<a class="headerlink" href="#cold-environment-important-rules-and-informations-to-know-and-follow" title="Permalink to this headline">¶</a></h2>
+<p>This part can be boring and look like useless but cold environment are very different than classic laboratory room. For your safety and the quality of the experiment, please take note of the following points.</p>
+<ul class="simple">
+<li><p>Before starting any session in cold chamber, clothes must be adapted to the session’s lenght and other people must be aware of your session. Head and foot are the most important part to keep warm so boots, hat (one or two) and a fleece suit (or similar) is strongly recommended. Of courses, gloves are mendatory for your own safety.</p></li>
+<li><p>Due to the low temperature encountered in chamber (from 0°C to -15°C), it is recommended to take breakes when you feel the need to warm yourself up. Precipitation can make you loose days of work so be patient.</p></li>
+<li><p>Every tools and consommables used in experiments or preparations must be cooled at the chamber temperature before using them. Otherwise, this could melt the snow/ice sample.</p></li>
+<li><p>Wearing a mask is recommended because human breathe can melt/damage the snow/ice sample.</p></li>
+<li><p>Before storing any sample, they must be sealed. Otherwise sublimation of ice can damaged the sample. This applied for long term storage as for short one (like a night).</p></li>
+<li><p>Use isolated container to move sample from a chamber to another. This applied specially to thin film which can be heavly damaged by room temperature.</p></li>
+<li><p>In the following, when we talk about room temperature, we mean 20-25 °C. Do not confuse room and chamber temperature (which varied depending on the step).</p></li>
+</ul>
 </div>
+<div class="section" id="preparation-of-the-water">
+<h2>Preparation of the water<a class="headerlink" href="#preparation-of-the-water" title="Permalink to this headline">¶</a></h2>
+<p>At room temperature.</p>
+<ul class="simple">
+<li><p>Fill up a balloon with chemist water (clean water).</p></li>
+<li><p>Boil it during 45 minutes approximately.</p></li>
+<li><p>Cap the bottle.</p></li>
+<li><p>Let it cool down at room temperature than put it at 0°C in a chamber (at least one night so the water is at the chamber temperature).</p></li>
+</ul>
 </div>
-<p>Give the value Dlarge (and Dsmall if required) in millimeter (see figure below) :</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Dlarge</span><span class="o">=</span><span class="mf">52.2</span> <span class="c1"># millimeter</span>
-<span class="n">Dsmall</span><span class="o">=</span><span class="mf">42.0</span> <span class="c1"># millimeter</span>
-</pre></div>
+<div class="section" id="preparation-of-the-snow">
+<h2>Preparation of the snow<a class="headerlink" href="#preparation-of-the-snow" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fill up a box at two third with clean water.</p></li>
+<li><p>Let it freeze in a chamber at low temperature (for example -15°C) until there is no water left in the box.</p></li>
+<li><p>Move the box at room temperature, reverse it above a sink and wait for the ice block to fall. Once it drops, move it back in the chamber.</p></li>
+<li><p>Cut small pieces of ice and crush them into snow. Use a 2 mm sieve to keep only grain bellow 2mm radius.</p></li>
+<li><p>Fill up a crystallizer up to 4/5. (Slam gently the column with the “carpet” in order to pack the snow and reduce as possible the air)</p></li>
+<li><p>Fold a tissue and put it inside de crystallizer above the snow. Make sure the tissue blocks most of the snow.</p></li>
+</ul>
 </div>
+<div class="section" id="creation-of-the-granular-ice">
+<h2>Creation of the granular ice<a class="headerlink" href="#creation-of-the-granular-ice" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Move the crystallizer to a chamber at 0°C, put some silicone grease between the crystallizer and his cover. The grease should be applied in a continuous line. Put the cover at the top of the crystallizer.</p></li>
+<li><p>Connect it to the ballon which contain the water prepared above and a vacuum pump. If possible, connect the balloon at the center of the cover: the distribution of water will be more homogeneous.</p></li>
+<li><p>Start the pump and let it work during approximately 1 h in order to make the void.</p></li>
+<li><p>Pinch off the tube and stop the pump.</p></li>
+<li><p>Reverse the balloon of water and wait for the water to drop in the crystallizer. (The tissue will allow a more homogeneous distribution of water inside the crystallizer).</p></li>
+<li><p>A line should appeared at the bottom of the crystallizer. When it reach near the edge of the snow at the top, reverse again the balloon.</p></li>
+<li><p>Allow some air to go in the crystallizer by releasing for a brief instant the pinch. This will pack the snow again, moving the air trapped inside the snow outside.</p></li>
+<li><p>Use a peltier device at -15°C to create a growth from bottom to top. Put some thermal insulator around the crystallizer. (Control the peltier device’s temperature with a thermometer)</p></li>
+<li><p>When there is no water left in the crystallizer, unmould it like the ice. This should take around 45min-50min. Watch out for any unwanted shock which can brittle the sample. Also don’t wait too much : The sample must stay the less possible at room temperature.</p></li>
+<li><p>Seal it and store it at -5°C for recrystallisation. The seal will stop the sample to be damaged by the sublimation of ice.</p></li>
+<li><p>Don’t forget to put outside of the chamber any part that could work no more with ice formed inside such as the tube between the balloon and the crystallizer.</p></li>
+</ul>
+<p>Now, we have a sample of granular ice. But we need to machine it : Reduce the radius, the heigh and correct the parallelism of each base of the sample. We will cut a bit of the sample in order to create a thin film but also a surface on the sample which will receive the mouchti required for Digital Image Correlation (DIC).</p>
 </div>
-</div>
-<img src="../Docs/circle_Dlarge_Dsmall.png" alt="circle_diameters" class="bg-primary mb-1" width="400px"><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">area_tronc_cyl</span><span class="p">)</span>
-<span class="n">help</span><span class="p">(</span><span class="n">theor_weight</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on function area_tronc_cyl in module Various_Functions:
-
-area_tronc_cyl(Dlarge, Dsmall)
-    This function compute the surface and the mass to applied on the sample for the experiment
-    :param Dlarge: circle diameter (unit millimeter) (see schematic)
-    :type Dlarge: float
-    :param Dsmall: smaller larger (unit millimeter) (see schematic)
-    :type Dsmall: float
-
-Help on function theor_weight in module Various_Functions:
-
-theor_weight(AreaSample, stress=0.8)
-    This function compute the mass to applied on the sample for the experiment
-    :param AreaSample: Area of the sample (unit millimeter²) 
-    :type AreaSample: float
-    :param stress: stress applied on the sample (in MPa)
-    :type stress: float
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Af</span><span class="o">=</span><span class="n">area_tronc_cyl</span><span class="p">(</span><span class="n">Dlarge</span><span class="p">,</span><span class="n">Dsmall</span><span class="p">)</span>
-<span class="n">Mth</span><span class="o">=</span><span class="n">theor_weight</span><span class="p">(</span><span class="n">Af</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Area of the sample = </span><span class="si">{:.2f}</span><span class="s2"> mm²&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Af</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Theoretical weight= </span><span class="si">{:.1f}</span><span class="s2"> g or </span><span class="si">{:.3f}</span><span class="s2"> kg&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Mth</span><span class="p">,</span><span class="n">Mth</span><span class="o">*</span><span class="mf">0.001</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Area of the sample = 1845.36 mm²
-Theoretical weight= 10385.1 g or 10.385 kg
-</pre></div>
-</div>
-</div>
-</div>
-<p>If needed, there is <a class="reference internal" href="Demonstration_Area_Calcul.html"><span class="doc std std-doc">the demonstration of the calcul</span></a> made above.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -327,6 +346,8 @@ Theoretical weight= 10385.1 g or 10.385 kg
         
         <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="Build_Columnar_Ice.html" title="previous page">Building Columnar Ice</a>
+    <a class='right-next' id="next-link" href="Machining_Sample.html" title="next page">Machining of the sample</a>
 
         </div>
         
