@@ -3,7 +3,7 @@
 
 # # Making of a thin film of granular ice
 # 
-# The making of a thin film before the creep experiment will allow us to spot recrystallization area and compare grains orientation before and after the experiment.
+# 
 # ## Extraction of a piece from the sample
 # Concerning thin film of ice, they must be sealed if not used. Due to their geometry, sublimation is far from negligible. On top of that, the sample must be transported in a container thermally insulated. Also be cautious when machining or manipulating the thin film. His thickness make the thin film very brittle.
 # - Prepare a few glass panel (normal and thick one). Wash them with alcohol and dry them then move them in a chamber at -15°C. Move aswell 2-3 pipette and some clean water on a bowl.
