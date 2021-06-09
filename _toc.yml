@@ -4,6 +4,7 @@
 format: jb-book
 root: Intro
 chapters:
+- file: Docs/Warning_Cold_Env
 - file: Docs/Build_Columnar_Ice
 - file: Docs/Build_Granular_Ice
 - file: Docs/Machining_Sample
