@@ -8,6 +8,8 @@
 # 
 # ## Introduction to AITA
 # 
+# <img src="../Docs/AITA.jpg" alt="AITA" class="bg-primary mb-1" width="400px">
+# 
 # ## Setup of AITA
 # 
 # ## Acquisition 

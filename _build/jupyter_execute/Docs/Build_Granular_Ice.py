@@ -23,6 +23,8 @@
 # - Fill up a crystallizer up to 4/5. (Slam gently the column with the "carpet" in order to pack the snow and reduce as possible the air)
 # - Fold a tissue and put it inside de crystallizer above the snow. Make sure the tissue blocks most of the snow. 
 # 
+# 
+
 # ## Creation of the granular ice
 # 
 # - Move the crystallizer to a chamber at 0°C, put some silicone grease between the crystallizer and his cover. The grease should be applied in a continuous line. Put the cover at the top of the crystallizer.
@@ -33,17 +35,14 @@
 # - A line should appeared at the bottom of the crystallizer. When it reach near the edge of the snow at the top, reverse again the balloon.
 # - Allow some air to go in the crystallizer by releasing for a brief instant the pinch. This will pack the snow again, moving the air trapped inside the snow outside.
 # - Use a peltier device at -15°C to create a growth from bottom to top. Put some thermal insulator around the crystallizer. (Control the peltier device's temperature with a thermometer)
+# 
+# <img src="../Docs/Setup_Crystallization_Peltier.jpg" alt="Setup_Crystallization_Peltier" class="bg-primary mb-1" width="400px">
+# 
 # - When there is no water left in the crystallizer, unmould it like the ice. This should take around 45min-50min. Watch out for any unwanted shock which can brittle the sample. Also don't wait too much : The sample must stay the less possible at room temperature.
 # - Seal it and store it at -5°C for recrystallisation. The seal will stop the sample to be damaged by the sublimation of ice.
 # - Don't forget to put outside of the chamber any part that could work no more with ice formed inside such as the tube between the balloon and the crystallizer.
 # 
 # Now, we have a sample of granular ice. But we need to machine it : Reduce the radius, the heigh and correct the parallelism of each base of the sample. We will cut a bit of the sample in order to create a thin film but also a surface on the sample which will receive the mouchti required for Digital Image Correlation (DIC).
-
-# In[ ]:
-
-
-
-
 
 # In[ ]:
 
