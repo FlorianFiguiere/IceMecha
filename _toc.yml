@@ -1,14 +1,10 @@
-# Table of content
-# Learn more at https://jupyterbook.org/customize/toc.html
-#
 format: jb-book
 root: Intro
-chapters:
-- file: Docs/Warning_Cold_Env
-- file: Docs/Build_Columnar_Ice
-- file: Docs/Build_Granular_Ice
-- file: Docs/Machining_Sample
-- file: Docs/Thin_Ice_Film_Making
-- file: Docs/Thin_Ice_Film_AITA
-- file: Docs/Creep_Experiment
-
+parts:
+- caption: Experiment
+  chapters:
+  - file: docs/experiment/Creep_Experiment
+- caption: Tools
+  chapters:
+  - file: docs/tools/Synthesize_Ice
+  - file: docs/tools/DIC_General

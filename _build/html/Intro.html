@@ -51,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Cold environment : important rules and informations to know and follow" href="Docs/Warning_Cold_Env.html" />
+    <link rel="next" title="Creep experiment" href="docs/experiment/Creep_Experiment.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -88,40 +88,32 @@
   </a>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Experiment
+ </span>
+</p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="Docs/Warning_Cold_Env.html">
-   Cold environment : important rules and informations to know and follow
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Docs/Build_Columnar_Ice.html">
-   Building Columnar Ice
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Docs/Build_Granular_Ice.html">
-   Building Granular Ice
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Docs/Machining_Sample.html">
-   Machining of the sample
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Docs/Thin_Ice_Film_Making.html">
-   Making of a thin film of granular ice
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Docs/Thin_Ice_Film_AITA.html">
-   AITA
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Docs/Creep_Experiment.html">
+  <a class="reference internal" href="docs/experiment/Creep_Experiment.html">
    Creep experiment
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tools
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs/tools/Synthesize_Ice.html">
+   Synthesize ice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs/tools/DIC_General.html">
+   Digital Image Correlation (DIC)
   </a>
  </li>
 </ul>
@@ -165,9 +157,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Intro.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Intro.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -188,7 +180,7 @@
             href="https://github.com/FlorianFiguiere/IceMecha/issues/new?title=Issue%20on%20page%20%2FIntro.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/FlorianFiguiere/IceMecha/edit/main/docs/Intro.ipynb"><button
+        <a class="edit-button" href="https://github.com/FlorianFiguiere/IceMecha/edit/main/docs/Intro.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -203,23 +195,6 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/FlorianFiguiere/IceMecha/main?urlpath=lab/tree/docs/Intro.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
@@ -231,13 +206,18 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#protocols">
-   Protocols
+  <a class="reference internal nav-link" href="#experiments">
+   Experiments
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#experiments">
-   Experiments
+  <a class="reference internal nav-link" href="#tools">
+   Tools
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contribute">
+   Contribute
   </a>
  </li>
 </ul>
@@ -253,23 +233,34 @@
                 
   <div class="section" id="index">
 <h1>Index<a class="headerlink" href="#index" title="Permalink to this headline">¶</a></h1>
-<p>This Jupyter Book will talk about protocols and experiment used at IGE. The aim is to list protocols and experiment in one place, making easier researches and documentations about ice mechanics. There is below a table of content :</p>
-<p>/!\ Make sure to read once <a class="reference internal" href="Docs/Warning_Cold_Env.html"><span class="doc std std-doc">Warnings and advices when experimenting in cold chamber</span></a> before attempting at any of the following protocol (for the quality of the result and your security).</p>
-<div class="section" id="protocols">
-<h2>Protocols<a class="headerlink" href="#protocols" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference internal" href="Docs/Build_Columnar_Ice.html"><span class="doc std std-doc">Building Columnar Ice</span></a> : Protocol on how to build columnar ice from clean water.</p></li>
-<li><p><a class="reference internal" href="Docs/Build_Granular_Ice.html"><span class="doc std std-doc">Building Granular Ice</span></a> : Protocol on how to build granular ice from columnar ice.</p></li>
-<li><p><a class="reference internal" href="Docs/Thin_Ice_Film_Making.html"><span class="doc std std-doc">Create a thin ice film</span></a> : How to make a thin ice film from a sample of ice.</p></li>
-<li><p><a class="reference internal" href="Docs/Thin_Ice_Film_AITA.html"><span class="doc std std-doc">How to use AITA</span></a> : How to analysis thin ice film using AITA.</p></li>
-<li><p><a class="reference internal" href="Docs/Creep_Experiment.html"><span class="doc std std-doc">Machining for cylindrical sample</span></a> : Protocol on how to machining samples</p></li>
-</ul>
-</div>
+<p>This Jupyter Book will talk about tools and experiment used at IGE. The aim is to list protocols, tools and experiment in one place, making researches and documentations about ice mechanics easier to find. There is below a table of content :</p>
+<p>/!\ Make sure to read once <a class="reference internal" href="docs/Warning_Cold_Env.html"><span class="doc std std-doc">Warnings and advices when experimenting in cold chamber</span></a> before attempting at any of the following protocol (for the quality of the result and your security).</p>
 <div class="section" id="experiments">
 <h2>Experiments<a class="headerlink" href="#experiments" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="Docs/Creep_Experiment.html"><span class="doc std std-doc">Creep experiment</span></a> : Creep experiment on granular ice.</p></li>
+<li><p><a class="reference internal" href="docs/experiment/Creep_Experiment.html"><span class="doc std std-doc">Creep experiment</span></a> : Creep experiment on granular ice.</p></li>
+<li><p><a class="reference internal" href="docs/experiment/Recrystallization_Cinetic.html"><span class="doc std std-doc">Recrystallization cinetic</span></a> : Determination of recrystallization rate throught thin ice film from a deformed sample.</p></li>
 </ul>
+</div>
+<div class="section" id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><span class="xref myst">Orientation mapping</span> :  (not available yet)</p></li>
+<li><p><a class="reference internal" href="docs/tools/DIC_General.html"><span class="doc std std-doc">Strain field measurement</span></a> : Use of Digital Image Correlation.</p></li>
+<li><p><a class="reference internal" href="docs/tools/Synthesize_Ice.html"><span class="doc std std-doc">Synthesize ice</span></a> : How to synthesize ice from water for experiment.</p></li>
+</ul>
+</div>
+<div class="section" id="contribute">
+<h2>Contribute<a class="headerlink" href="#contribute" title="Permalink to this headline">¶</a></h2>
+<p>You are welcome to contribute to the project. Here are some way to contribute to it :</p>
+<ol class="simple">
+<li><p><a class="reference external" href="https://github.com/FlorianFiguiere/IceMecha/pulls">Submit commit</a> to fix bug or add news functionalities.</p></li>
+<li><p>Repport <a class="reference external" href="https://github.com/FlorianFiguiere/IceMecha/issues">issues</a> that you found using those tools.</p></li>
+<li><p>Talk about the tools around you if you find it interesting and/or put a star on it.</p></li>
+</ol>
+<p>Feel free to <a class="reference external" href="mailto:florian&#46;figuiere&#37;&#52;&#48;grenoble-inp&#46;org">contact me</a> if you like to discuss about it.</p>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -300,7 +291,7 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='right-next' id="next-link" href="Docs/Warning_Cold_Env.html" title="next page">Cold environment : important rules and informations to know and follow</a>
+    <a class='right-next' id="next-link" href="docs/experiment/Creep_Experiment.html" title="next page">Creep experiment</a>
 
         </div>
         
